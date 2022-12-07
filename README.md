@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# blog-with-friends-frontend
+
+This app is the frontend portion for my project, Blog With Friends, using ReactJS.
+
+[Click Here](https://github.com/dcalhoun286/blog-with-friends-server) to navigate to the backend app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
