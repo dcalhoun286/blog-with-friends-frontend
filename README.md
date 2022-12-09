@@ -79,3 +79,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     - [What's new in React Router v6 | Manish Sundriyal on Medium](https://medium.com/@manishsundriyal/whats-new-in-react-router-v6-20eefe665be9)
     - [React Router Tutorial | reactrouter.com](https://reactrouter.com/en/main/start/tutorial)
     - [React Router docs | GitHub](https://github.com/remix-run/react-router/blob/main/docs/start/tutorial.md)
+    - [React Error Handling | Tyler Smith on dev.to](https://dev.to/tylerlwsmith/error-boundary-causes-react-router-links-to-stop-working-50gb)
