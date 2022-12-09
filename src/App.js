@@ -8,7 +8,7 @@ import Footer from './components/layout/Footer';
 
 import Home from './components/Home';
 import Test from './components/Test';
-import NotFound from './NotFound';
+import NotFound from './components/error-handling/NotFound';
 import UsersRoute from './routes/UsersRoute';
 
 const App = () => {
