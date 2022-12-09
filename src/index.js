@@ -11,11 +11,18 @@ import App from './App';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
 
+// routes
+import UsersRoute from './routes/UsersRoute';
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />
+  },
+  {
+    path: "/users",
+    element: <UsersRoute />
   }
 ]);
 
