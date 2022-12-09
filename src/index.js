@@ -3,27 +3,20 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from 'react-router-dom';
 
 import './index.css';
-import App from './App';
 import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
 
-// routes
-import UsersRoute from './routes/UsersRoute';
+import App from './App';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <App />,
     errorElement: <ErrorPage />
   },
-  {
-    path: "/users",
-    element: <UsersRoute />
-  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

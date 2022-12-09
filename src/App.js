@@ -1,12 +1,31 @@
 import React from 'react';
 
+import { Routes, Route } from 'react-router-dom';
+
+import Header from './components/layout/Header';
+import Main from './components/layout/Main';
+import Footer from './components/layout/Footer';
+
+import Home from './components/Home';
+import Test from './components/Test';
+import NotFound from './NotFound';
+import UsersRoute from './routes/UsersRoute';
+
 const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Blog With Friends</h1>
-      </header>
+
+      <Header />
+      <Main>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/test" element={<Test />}/>
+          <Route path="/users" element={<UsersRoute />}/>
+          <Route path="*" element={<NotFound />}/>
+        </Routes>
+      </Main>
+      <Footer />
     </div>
   );
 }
