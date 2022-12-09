@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function App() {
+const App = () => {
 
   const [users, setUsers] = useState([]);
 
