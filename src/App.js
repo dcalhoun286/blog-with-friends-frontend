@@ -23,6 +23,20 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Blog With Friends</h1>
+        {
+          !users.isEmpty
+            ? (
+            
+            <ul>
+              {users.map(userRecord => (
+                <li key={userRecord.id}>
+                  <h2>{`${userRecord.firstname} ${userRecord.lastname}`}</h2>
+                  <p>{`username: ${userRecord.username}`}</p>
+                </li>
+              ))}
+            </ul>
+          ) : null
+        }
       </header>
     </div>
   );
