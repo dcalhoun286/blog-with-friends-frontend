@@ -8,12 +8,14 @@ import {
 
 import './index.css';
 import App from './App';
+import ErrorPage from './ErrorPage';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <ErrorPage />
   }
 ]);
 
