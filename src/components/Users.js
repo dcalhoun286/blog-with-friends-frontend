@@ -30,7 +30,7 @@ const Users = () => {
                         <li key={userRecord.id}>
                             <h2>{`${userRecord.firstname} ${userRecord.lastname}`}</h2>
                             <p>{`username: ${userRecord.username}`}</p>
-                            <Link to={userRecord.username}>See {userRecord.firstname}'s posts</Link>
+                            <Link to={`${userRecord.username}/posts`}>See {userRecord.firstname}'s posts</Link>
                         </li>
                     ))}
                     </ul>
