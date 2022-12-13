@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Username = () => {
+const Username = ({ username }) => {
     return (
-        {}
+        <p>{username}</p>
     );
 };
 
