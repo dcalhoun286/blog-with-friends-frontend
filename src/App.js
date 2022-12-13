@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Test from './components/Test';
 import NotFound from './components/error-handling/NotFound';
 import UsersRoute from './routes/UsersRoute';
+import UsernameRoute from './routes/UsernameRoute';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Home />}/>
           <Route path="/test" element={<Test />}/>
           <Route path="/users" element={<UsersRoute />}/>
+          <Route path="/users/:username/posts" element={<UsernameRoute />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
       </Main>
