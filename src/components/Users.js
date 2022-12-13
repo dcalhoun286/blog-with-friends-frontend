@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Users = () => {
 
@@ -26,13 +26,13 @@ const Users = () => {
                     ? (
                     
                     <ul>
-                    {users.map(userRecord => (
-                        <li key={userRecord.id}>
-                            <h2>{`${userRecord.firstname} ${userRecord.lastname}`}</h2>
-                            <p>{`username: ${userRecord.username}`}</p>
-                            <Link to={`${userRecord.username}/posts`}>See {userRecord.firstname}'s posts</Link>
-                        </li>
-                    ))}
+                        {users.map(userRecord => (
+                            <li key={userRecord.id}>
+                                <h2>{`${userRecord.firstname} ${userRecord.lastname}`}</h2>
+                                <p>{`username: ${userRecord.username}`}</p>
+                                <Link to={`${userRecord.username}/posts`}>See {userRecord.firstname}'s posts</Link>
+                            </li>
+                        ))}
                     </ul>
                 ) : null
             }
